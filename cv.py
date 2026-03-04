@@ -5,7 +5,6 @@ import re
 from pytesseract import Output
 from difflib import SequenceMatcher
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
 # ==========================================
@@ -394,3 +393,4 @@ if __name__ == "__main__":
             print(f"\nERROR on {image_path}: {e}")
 
     print("\n" + "=" * 55)
+
