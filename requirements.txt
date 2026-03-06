@@ -2,9 +2,10 @@ flask
 numpy
 pandas
 scikit-learn
-opencv-python
+opencv-python-headless
 pillow
 pytesseract
 waitress
 gunicorn
+
 
