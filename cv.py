@@ -6,8 +6,10 @@ import shutil
 from pytesseract import Output
 from difflib import SequenceMatcher
 
-if shutil.which("tesseract"):
-    pytesseract.pytesseract.tesseract_cmd = "tesseract"
+
+path = shutil.which("tesseract")
+if path:
+    pytesseract.pytesseract.tesseract_cmd = path
 
 
 
@@ -397,5 +399,6 @@ if __name__ == "__main__":
             print(f"\nERROR on {image_path}: {e}")
 
     print("\n" + "=" * 55)
+
 
 
